@@ -1,7 +1,9 @@
 const mongoose = require('mongoose');
-const dbURI = 'mongodb://localhost:27017/hotels';
+require('dotenv').config();
 
-mongoose.connect(dbURI);
+const DB_URI = process.env.dbURIAtlas;
+console.log('DB_URI:', DB_URI);
+mongoose.connect(DB_URI);
 
 const db = mongoose.connection;
 

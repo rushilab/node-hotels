@@ -3,7 +3,6 @@ import db from './db.cjs';
 
 import bodyParser from 'body-parser';
 
-
 const app = express();
 // const db = require('./db');
 
